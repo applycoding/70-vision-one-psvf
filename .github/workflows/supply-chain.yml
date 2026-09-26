@@ -37,3 +37,44 @@ jobs:
             licenses.json
             npm-audit.json
           if-no-files-found: error
+
+  scan-pipeline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: pipeline/package-lock.json
+
+      - name: Install from lockfile
+        run: npm ci
+
+      - name: Prepare artifact directory
+        run: mkdir -p artifacts
+
+      - name: CycloneDX SBOM
+        run: npx --yes @cyclonedx/cyclonedx-npm --output-file artifacts/pipeline-sbom.cdx.json
+
+      - name: License inventory
+        run: npx --yes license-checker-rseidelsohn --json --out artifacts/pipeline-licenses.json
+
+      - name: npm audit
+        continue-on-error: true
+        run: npm audit --json > artifacts/pipeline-npm-audit.json
+
+      - name: Upload pipeline scan JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-supply-chain-json
+          path: |
+            pipeline/artifacts/pipeline-sbom.cdx.json
+            pipeline/artifacts/pipeline-licenses.json
+            pipeline/artifacts/pipeline-npm-audit.json
+          if-no-files-found: error

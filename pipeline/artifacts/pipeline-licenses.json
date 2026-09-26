@@ -1,0 +1,327 @@
+{
+    "@cloudflare/kv-asset-handler@0.5.0": {
+        "licenses": "MIT OR Apache-2.0",
+        "repository": "https://github.com/cloudflare/workers-sdk",
+        "publisher": "wrangler@cloudflare.com",
+        "path": "/workspace/pipeline/node_modules/@cloudflare/kv-asset-handler",
+        "licenseFile": "/workspace/pipeline/node_modules/@cloudflare/kv-asset-handler/README.md"
+    },
+    "@cloudflare/unenv-preset@2.16.2": {
+        "licenses": "MIT OR Apache-2.0",
+        "repository": "https://github.com/cloudflare/workers-sdk",
+        "path": "/workspace/pipeline/node_modules/@cloudflare/unenv-preset",
+        "licenseFile": "/workspace/pipeline/node_modules/@cloudflare/unenv-preset/README.md"
+    },
+    "@cloudflare/workerd-linux-64@1.20260923.1": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/cloudflare/workerd",
+        "path": "/workspace/pipeline/node_modules/@cloudflare/workerd-linux-64",
+        "licenseFile": "/workspace/pipeline/node_modules/@cloudflare/workerd-linux-64/README.md"
+    },
+    "@cspotcode/source-map-support@0.8.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/cspotcode/node-source-map-support",
+        "path": "/workspace/pipeline/node_modules/@cspotcode/source-map-support",
+        "licenseFile": "/workspace/pipeline/node_modules/@cspotcode/source-map-support/LICENSE.md"
+    },
+    "@emnapi/runtime@1.11.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/toyobayashi/emnapi",
+        "publisher": "toyobayashi",
+        "path": "/workspace/pipeline/node_modules/@emnapi/runtime",
+        "licenseFile": "/workspace/pipeline/node_modules/@emnapi/runtime/LICENSE"
+    },
+    "@esbuild/linux-x64@0.28.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/evanw/esbuild",
+        "path": "/workspace/pipeline/node_modules/@esbuild/linux-x64",
+        "licenseFile": "/workspace/pipeline/node_modules/@esbuild/linux-x64/README.md"
+    },
+    "@img/colour@1.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/lovell/colour",
+        "path": "/workspace/pipeline/node_modules/@img/colour",
+        "licenseFile": "/workspace/pipeline/node_modules/@img/colour/LICENSE.md"
+    },
+    "@img/sharp-libvips-linux-x64@1.3.3": {
+        "licenses": "LGPL-3.0-or-later",
+        "repository": "https://github.com/lovell/sharp-libvips",
+        "publisher": "Lovell Fuller",
+        "email": "npm@lovell.info",
+        "path": "/workspace/pipeline/node_modules/@img/sharp-libvips-linux-x64",
+        "licenseFile": "/workspace/pipeline/node_modules/@img/sharp-libvips-linux-x64/README.md"
+    },
+    "@img/sharp-linux-x64@0.35.4": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/lovell/sharp",
+        "publisher": "Lovell Fuller",
+        "email": "npm@lovell.info",
+        "path": "/workspace/pipeline/node_modules/@img/sharp-linux-x64",
+        "licenseFile": "/workspace/pipeline/node_modules/@img/sharp-linux-x64/LICENSE"
+    },
+    "@img/sharp-wasm32@0.35.4": {
+        "licenses": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+        "repository": "https://github.com/lovell/sharp",
+        "publisher": "Lovell Fuller",
+        "email": "npm@lovell.info",
+        "path": "/workspace/pipeline/node_modules/@img/sharp-wasm32",
+        "licenseFile": "/workspace/pipeline/node_modules/@img/sharp-wasm32/LICENSE"
+    },
+    "@jridgewell/resolve-uri@3.1.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/jridgewell/resolve-uri",
+        "publisher": "Justin Ridgewell",
+        "email": "justin@ridgewell.name",
+        "path": "/workspace/pipeline/node_modules/@jridgewell/resolve-uri",
+        "licenseFile": "/workspace/pipeline/node_modules/@jridgewell/resolve-uri/LICENSE"
+    },
+    "@jridgewell/sourcemap-codec@1.6.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/jridgewell/sourcemaps",
+        "publisher": "Justin Ridgewell",
+        "email": "justin@ridgewell.name",
+        "path": "/workspace/pipeline/node_modules/@jridgewell/sourcemap-codec",
+        "licenseFile": "/workspace/pipeline/node_modules/@jridgewell/sourcemap-codec/LICENSE"
+    },
+    "@jridgewell/trace-mapping@0.3.9": {
+        "licenses": "MIT",
+        "repository": "https://github.com/jridgewell/trace-mapping",
+        "publisher": "Justin Ridgewell",
+        "email": "justin@ridgewell.name",
+        "path": "/workspace/pipeline/node_modules/@jridgewell/trace-mapping",
+        "licenseFile": "/workspace/pipeline/node_modules/@jridgewell/trace-mapping/LICENSE"
+    },
+    "@pdf-lib/standard-fonts@1.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Hopding/standard-fonts",
+        "publisher": "Andrew Dillon",
+        "email": "andrew.dillon.j@gmail.com",
+        "path": "/workspace/pipeline/node_modules/@pdf-lib/standard-fonts",
+        "licenseFile": "/workspace/pipeline/node_modules/@pdf-lib/standard-fonts/LICENSE.md"
+    },
+    "@pdf-lib/upng@1.0.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Hopding/upng",
+        "publisher": "photopea",
+        "path": "/workspace/pipeline/node_modules/@pdf-lib/upng",
+        "licenseFile": "/workspace/pipeline/node_modules/@pdf-lib/upng/LICENSE"
+    },
+    "@poppinss/colors@4.1.6": {
+        "licenses": "MIT",
+        "repository": "https://github.com/poppinss/colors",
+        "publisher": "virk",
+        "path": "/workspace/pipeline/node_modules/@poppinss/colors",
+        "licenseFile": "/workspace/pipeline/node_modules/@poppinss/colors/LICENSE.md"
+    },
+    "@poppinss/dumper@0.6.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/poppinss/dumper",
+        "publisher": "Harminder Virk",
+        "email": "virk@adonisjs.com",
+        "path": "/workspace/pipeline/node_modules/@poppinss/dumper",
+        "licenseFile": "/workspace/pipeline/node_modules/@poppinss/dumper/LICENSE.md"
+    },
+    "@poppinss/exception@1.2.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/poppinss/exception",
+        "publisher": "Harminder Virk",
+        "email": "virk@adonisjs.com",
+        "path": "/workspace/pipeline/node_modules/@poppinss/exception",
+        "licenseFile": "/workspace/pipeline/node_modules/@poppinss/exception/LICENSE.md"
+    },
+    "@sindresorhus/is@7.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sindresorhus/is",
+        "publisher": "Sindre Sorhus",
+        "email": "sindresorhus@gmail.com",
+        "path": "/workspace/pipeline/node_modules/@sindresorhus/is",
+        "licenseFile": "/workspace/pipeline/node_modules/@sindresorhus/is/license"
+    },
+    "@speed-highlight/core@1.2.24": {
+        "licenses": "CC0-1.0",
+        "repository": "https://github.com/speed-highlight/core",
+        "publisher": "matubu",
+        "email": "hi@mathias.ninja",
+        "path": "/workspace/pipeline/node_modules/@speed-highlight/core",
+        "licenseFile": "/workspace/pipeline/node_modules/@speed-highlight/core/LICENSE"
+    },
+    "blake3-wasm@2.1.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/connor4312/blake3",
+        "publisher": "Connor Peet",
+        "email": "connor@peet.io",
+        "path": "/workspace/pipeline/node_modules/blake3-wasm",
+        "licenseFile": "/workspace/pipeline/node_modules/blake3-wasm/LICENSE"
+    },
+    "cookie@1.1.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/jshttp/cookie",
+        "publisher": "Roman Shtylman",
+        "email": "shtylman@gmail.com",
+        "path": "/workspace/pipeline/node_modules/cookie",
+        "licenseFile": "/workspace/pipeline/node_modules/cookie/LICENSE"
+    },
+    "detect-libc@2.1.2": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/lovell/detect-libc",
+        "publisher": "Lovell Fuller",
+        "email": "npm@lovell.info",
+        "path": "/workspace/pipeline/node_modules/detect-libc",
+        "licenseFile": "/workspace/pipeline/node_modules/detect-libc/LICENSE"
+    },
+    "error-stack-parser-es@1.0.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/antfu/error-stack-parser-es",
+        "path": "/workspace/pipeline/node_modules/error-stack-parser-es",
+        "licenseFile": "/workspace/pipeline/node_modules/error-stack-parser-es/LICENSE"
+    },
+    "esbuild@0.28.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/evanw/esbuild",
+        "path": "/workspace/pipeline/node_modules/esbuild",
+        "licenseFile": "/workspace/pipeline/node_modules/esbuild/LICENSE.md"
+    },
+    "kleur@4.1.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/lukeed/kleur",
+        "publisher": "Luke Edwards",
+        "email": "luke.edwards05@gmail.com",
+        "path": "/workspace/pipeline/node_modules/kleur",
+        "licenseFile": "/workspace/pipeline/node_modules/kleur/license"
+    },
+    "miniflare@5.20260923.0-alpha": {
+        "licenses": "MIT",
+        "repository": "https://github.com/cloudflare/workers-sdk",
+        "publisher": "MrBBot",
+        "email": "me@mrbbot.dev",
+        "path": "/workspace/pipeline/node_modules/miniflare",
+        "licenseFile": "/workspace/pipeline/node_modules/miniflare/README.md"
+    },
+    "pako@1.0.11": {
+        "licenses": "(MIT AND Zlib)",
+        "repository": "https://github.com/nodeca/pako",
+        "path": "/workspace/pipeline/node_modules/pako",
+        "licenseFile": "/workspace/pipeline/node_modules/pako/LICENSE"
+    },
+    "path-to-regexp@6.3.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/pillarjs/path-to-regexp",
+        "path": "/workspace/pipeline/node_modules/path-to-regexp",
+        "licenseFile": "/workspace/pipeline/node_modules/path-to-regexp/LICENSE"
+    },
+    "pathe@2.0.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/unjs/pathe",
+        "path": "/workspace/pipeline/node_modules/pathe",
+        "licenseFile": "/workspace/pipeline/node_modules/pathe/LICENSE"
+    },
+    "pdf-lib@1.17.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Hopding/pdf-lib",
+        "publisher": "Andrew Dillon",
+        "email": "andrew.dillon.j@gmail.com",
+        "path": "/workspace/pipeline/node_modules/pdf-lib",
+        "licenseFile": "/workspace/pipeline/node_modules/pdf-lib/LICENSE.md"
+    },
+    "semver@7.8.5": {
+        "licenses": "ISC",
+        "repository": "https://github.com/npm/node-semver",
+        "publisher": "GitHub Inc.",
+        "path": "/workspace/pipeline/node_modules/semver",
+        "licenseFile": "/workspace/pipeline/node_modules/semver/LICENSE"
+    },
+    "sharp@0.35.4": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/lovell/sharp",
+        "publisher": "Lovell Fuller",
+        "email": "npm@lovell.info",
+        "path": "/workspace/pipeline/node_modules/sharp",
+        "licenseFile": "/workspace/pipeline/node_modules/sharp/LICENSE"
+    },
+    "supports-color@10.2.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/chalk/supports-color",
+        "publisher": "Sindre Sorhus",
+        "email": "sindresorhus@gmail.com",
+        "path": "/workspace/pipeline/node_modules/supports-color",
+        "licenseFile": "/workspace/pipeline/node_modules/supports-color/license"
+    },
+    "tslib@1.14.1": {
+        "licenses": "0BSD",
+        "repository": "https://github.com/Microsoft/tslib",
+        "publisher": "Microsoft Corp.",
+        "path": "/workspace/pipeline/node_modules/pdf-lib/node_modules/tslib",
+        "licenseFile": "/workspace/pipeline/node_modules/pdf-lib/node_modules/tslib/LICENSE.txt"
+    },
+    "tslib@2.8.1": {
+        "licenses": "0BSD",
+        "repository": "https://github.com/Microsoft/tslib",
+        "publisher": "Microsoft Corp.",
+        "path": "/workspace/pipeline/node_modules/tslib",
+        "licenseFile": "/workspace/pipeline/node_modules/tslib/LICENSE.txt"
+    },
+    "typescript@5.9.3": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/microsoft/TypeScript",
+        "publisher": "Microsoft Corp.",
+        "path": "/workspace/pipeline/node_modules/typescript",
+        "licenseFile": "/workspace/pipeline/node_modules/typescript/LICENSE.txt"
+    },
+    "undici@7.29.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/nodejs/undici",
+        "path": "/workspace/pipeline/node_modules/undici",
+        "licenseFile": "/workspace/pipeline/node_modules/undici/LICENSE"
+    },
+    "unenv@2.0.0-rc.24": {
+        "licenses": "MIT",
+        "repository": "https://github.com/unjs/unenv",
+        "path": "/workspace/pipeline/node_modules/unenv",
+        "licenseFile": "/workspace/pipeline/node_modules/unenv/LICENSE"
+    },
+    "unpdf@1.8.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/unjs/unpdf",
+        "publisher": "Johann Schopplich",
+        "email": "hello@johannschopplich.com",
+        "path": "/workspace/pipeline/node_modules/unpdf",
+        "licenseFile": "/workspace/pipeline/node_modules/unpdf/LICENSE"
+    },
+    "workerd@1.20260923.1": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/cloudflare/workerd",
+        "path": "/workspace/pipeline/node_modules/workerd",
+        "licenseFile": "/workspace/pipeline/node_modules/workerd/README.md"
+    },
+    "wrangler@4.140.0": {
+        "licenses": "MIT OR Apache-2.0",
+        "repository": "https://github.com/cloudflare/workers-sdk",
+        "publisher": "wrangler@cloudflare.com",
+        "path": "/workspace/pipeline/node_modules/wrangler",
+        "licenseFile": "/workspace/pipeline/node_modules/wrangler/README.md"
+    },
+    "ws@8.21.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/websockets/ws",
+        "publisher": "Einar Otto Stangvik",
+        "email": "einaros@gmail.com",
+        "path": "/workspace/pipeline/node_modules/ws",
+        "licenseFile": "/workspace/pipeline/node_modules/ws/LICENSE"
+    },
+    "youch-core@0.3.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/poppinss/youch-core",
+        "publisher": "Harminder Virk",
+        "email": "virk@adonisjs.com",
+        "path": "/workspace/pipeline/node_modules/youch-core",
+        "licenseFile": "/workspace/pipeline/node_modules/youch-core/LICENSE.md"
+    },
+    "youch@4.1.0-beta.10": {
+        "licenses": "MIT",
+        "repository": "https://github.com/poppinss/youch",
+        "publisher": "Harminder Virk",
+        "email": "virk@adonisjs.com",
+        "path": "/workspace/pipeline/node_modules/youch",
+        "licenseFile": "/workspace/pipeline/node_modules/youch/LICENSE.md"
+    }
+}
