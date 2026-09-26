@@ -1,0 +1,17 @@
+{
+  "name": "psvf-pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "wrangler": "^4.140.0"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "unpdf": "^1.8.1"
+  }
+}

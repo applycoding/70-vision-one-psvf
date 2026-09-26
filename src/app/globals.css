@@ -1,0 +1,536 @@
+@import "tailwindcss";
+
+:root {
+  --bay: #14110f;
+  --rack: #241c17;
+  --paper: #f3eee6;
+  --ink: #1a1512;
+  --muted: #6d6258;
+  --label: #cbbba6;
+  --line: #3c322b;
+  --tally: #e10600;
+  --danger: #ffb4a8;
+  --font-display: "Archivo Black", "Arial Narrow", Impact, sans-serif;
+  --font-body: Newsreader, "Iowan Old Style", Palatino, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bay);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-header {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-block: 1rem 0.5rem;
+}
+
+.site-bar,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wordmark,
+.rec,
+.marking,
+.kicker,
+.hint,
+footer,
+th,
+td,
+.severity,
+.choice-label {
+  font-family: var(--font-mono);
+}
+
+.wordmark {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+}
+
+.rec,
+.marking,
+.kicker,
+.hint,
+footer {
+  color: var(--label);
+}
+
+.rec {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tally {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--tally);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tally {
+    animation: tally 1.6s steps(1) infinite;
+  }
+}
+
+@keyframes tally {
+  0%,
+  62% {
+    opacity: 1;
+  }
+
+  63%,
+  100% {
+    opacity: 0.28;
+  }
+}
+
+.site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-header nav a[aria-current="page"] {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+
+.marking {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+main {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto 3rem;
+}
+
+.intro {
+  padding: 1.5rem 0 0.5rem;
+}
+
+.phase-banner {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.stale-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stale-list li {
+  padding: 1rem;
+  background: var(--rack);
+  border-top: 3px solid var(--tally);
+}
+
+.kicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  max-width: 16ch;
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 0.9;
+}
+
+h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.lead {
+  max-width: 38ch;
+  margin: 1rem 0 0.5rem;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+
+.hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.job-form,
+.line,
+section {
+  margin-top: 2rem;
+}
+
+fieldset {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+}
+
+legend,
+.choice-label {
+  margin-bottom: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+.req {
+  margin-inline-start: 0.35rem;
+  color: var(--danger);
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+input[type="file"],
+button {
+  font: inherit;
+  min-height: 48px;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--line);
+  background: var(--rack);
+  color: var(--paper);
+  font-size: 1rem;
+}
+
+input {
+  accent-color: var(--paper);
+}
+
+input:user-invalid {
+  border-color: var(--danger);
+}
+
+.error {
+  display: none;
+  margin: 0.4rem 0 0;
+  color: var(--danger);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+input:user-invalid + .error,
+.error.is-visible {
+  display: block;
+}
+
+.choices {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 48px;
+  padding: 0.35rem 0.7rem;
+  background: var(--rack);
+  cursor: pointer;
+}
+
+.choices small {
+  display: block;
+  color: var(--label);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.review-actions button {
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.ticket,
+.line li,
+.demo-list li,
+.reviews article,
+.facts div {
+  background: var(--rack);
+  padding: 1rem;
+}
+
+video {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  background: #000;
+}
+
+.cloud-run {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--rack);
+  border-top: 3px solid var(--tally);
+}
+
+.ticket h2 {
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.ticket dl,
+.facts {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+}
+
+.ticket dt,
+.facts dt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+.ticket dd,
+.facts dd {
+  margin: 0.15rem 0 0;
+}
+
+.line ol,
+.steps,
+.demo-list,
+.reviews {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.line ol {
+  counter-reset: stage;
+}
+
+.line li {
+  counter-increment: stage;
+  border-top: 3px solid var(--tally);
+}
+
+.line h3::before,
+.steps {
+  font-family: var(--font-mono);
+}
+
+.line h3::before {
+  content: counter(stage, decimal-leading-zero) "  ";
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--label);
+}
+
+.steps {
+  list-style: decimal;
+  padding-inline-start: 1.3rem;
+}
+
+.steps li + li {
+  margin-top: 0.6rem;
+}
+
+.demo-list a {
+  color: inherit;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+caption {
+  margin-bottom: 0.7rem;
+  text-align: start;
+  color: var(--label);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+th,
+td {
+  padding: 0.7rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: start;
+  vertical-align: top;
+  font-weight: 400;
+}
+
+.cell-sub {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--label);
+  font-family: var(--font-body);
+}
+
+.reviews header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+.reviews header p {
+  margin: 0;
+}
+
+.severity-block {
+  color: var(--danger);
+}
+
+.severity-warn {
+  color: #f0c36a;
+}
+
+footer {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  footer,
+  .site-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    max-width: none;
+  }
+}

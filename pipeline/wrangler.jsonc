@@ -1,0 +1,41 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "70-vision-one-psvf-pipeline",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "workflows": [
+    {
+      "name": "psvf-proc-edg-001",
+      "binding": "JOB_WORKFLOW",
+      "class_name": "PsvfJob"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "psvf-jobs",
+      "database_id": "1e652aff-e178-4568-a453-aa997889f17e"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "psvf-artifacts"
+    }
+  ],
+  "rules": [
+    {
+      "type": "Data",
+      "globs": ["**/*.pdf"],
+      "fallthrough": true
+    }
+  ]
+}
